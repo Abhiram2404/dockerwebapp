@@ -2,12 +2,12 @@
 version: "3"
 services:
  devopsdb:
-   image: abhiram2404/Docker_project:dbimage
+   image: abhiram2404/docker_project:dbimage
    ports:
      - "3306:3306"
 
  application:
-   image: abhiram2404/Docker_project:appimage
+   image: abhiram2404/docker_project:appimage
    ports:
      - "1111:8080"
    depends_on:
